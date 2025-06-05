@@ -27,7 +27,7 @@ try {
 
 
 // Connect to MongoDB Atlas
-mongoose.connect('mongodb+srv://sunreddy1920:AlIHf7G0WkXxNZE6@cluster0.ls5bo.mongodb.net/student', {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
