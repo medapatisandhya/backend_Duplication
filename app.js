@@ -10,6 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Ensure the data directory exists
+// This directory might not persist on Render, but it's good practice for local development
 const dataDirPath = path.join(__dirname, 'data');
 if (!fs.existsSync(dataDirPath)) {
   fs.mkdirSync(dataDirPath);
@@ -270,22 +271,26 @@ app.post('/api/students', async (req, res) => {
   }
 });
 
-// NEW ENDPOINT: Save JSON data to a file on the server
+// NEW ENDPOINT: Save JSON data to a file on the server (modified for logging)
 app.post('/api/save-json-file', (req, res) => {
   const jsonData = req.body; // Get the JSON data from the request body
-  const filePath = path.join(dataDirPath, 'student_schema.json'); // Define the file path
+  // const filePath = path.join(dataDirPath, 'student_schema.json'); // Define the file path (no longer writing to file)
 
   if (!jsonData) {
     return res.status(400).json({ message: 'No JSON data provided to save.' });
   }
 
   try {
-    // Write the JSON data to the file, formatted with 2 spaces for readability
-    fs.writeFileSync(filePath, JSON.stringify(jsonData, null, 2), 'utf8');
-    res.status(200).json({ message: `Data successfully saved to ${filePath} on the server.` });
+    // Instead of writing to a file, log the JSON data to the console.
+    // On Render, this will appear in your service logs.
+    console.log("--- Data for student_schema.json (logged from backend) ---");
+    console.log(JSON.stringify(jsonData, null, 2));
+    console.log("---------------------------------------------------------");
+
+    res.status(200).json({ message: `Data successfully logged to console. (Would have been saved to student_schema.json locally)` });
   } catch (err) {
-    console.error('Error saving JSON file on server:', err);
-    res.status(500).json({ message: `Failed to save JSON file on server: ${err.message}` });
+    console.error('Error processing JSON for logging:', err);
+    res.status(500).json({ message: `Failed to process JSON data for logging: ${err.message}` });
   }
 });
 
