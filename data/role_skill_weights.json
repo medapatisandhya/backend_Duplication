@@ -1,0 +1,171 @@
+{
+  "Software Developer": {
+    "skills":{
+        "Java": 20,
+        "Spring Boot": 18,
+        "REST API": 15,
+        "SQL": 15,
+        "Git": 10,
+        "Data Structures & Algorithms": 12,
+        "JUnit": 5,
+        "Docker": 5
+    }
+  },
+  "Frontend Developer": {
+    "skills":{
+        "HTML": 15,
+        "CSS": 15,
+        "JavaScript": 20,
+        "React": 20,
+        "TypeScript": 10,
+        "Redux": 8,
+        "Responsive Design": 7,
+        "Figma": 5
+    }
+  },
+  "Backend Developer": {
+    "skills":{
+        "Node.js": 20,
+        "Express": 18,
+        "MongoDB": 15,
+        "JWT": 10,
+        "REST API": 10,
+        "SQL": 10,
+        "Docker": 7,
+        "Redis": 5,
+        "Unit Testing": 5
+    }
+  },
+  "Full Stack Developer": {
+    "skills":{
+        "React": 15,
+        "Node.js": 15,
+        "Express": 10,
+        "MongoDB": 10,
+        "JavaScript": 10,
+        "TypeScript": 8,
+        "Redux": 7,
+        "SQL": 7,
+        "Docker": 8,
+        "CI/CD": 5,
+        "Git": 5
+    }
+  },
+  "Data Analyst": {
+    "skills":{
+        "Excel": 15,
+        "SQL": 20,
+        "Tableau": 15,
+        "Python": 15,
+        "Pandas": 10,
+        "Power BI": 10,
+        "Statistics": 10,
+        "Excel VBA": 5
+    }
+  },
+  "Data Scientist": {
+    "skills":{
+        "Python": 25,
+        "Pandas": 15,
+        "Scikit-learn": 20,
+        "TensorFlow": 15,
+        "NumPy": 10,
+        "Data Visualization": 10,
+        "SQL": 5
+    }
+  },
+  "Machine Learning Engineer": {
+    "skills":{
+        "Python": 20,
+        "TensorFlow": 20,
+        "Keras": 15,
+        "Scikit-learn": 15,
+        "Machine Learning Algorithms": 10,
+        "NumPy": 10,
+        "Deployment": 10
+    }
+  },
+  "AI Engineer": {
+    "skills":{
+        "Python": 20,
+        "NLP": 20,
+        "PyTorch": 20,
+        "Deep Learning": 20,
+        "Computer Vision": 10,
+        "OpenCV": 5,
+        "Model Optimization": 5
+    }
+  },
+  "DevOps Engineer": {
+    "skills":{
+        "Docker": 20,
+        "Kubernetes": 20,
+        "AWS": 20,
+        "CI/CD": 15,
+        "Linux": 10,
+        "Monitoring Tools": 10,
+        "Shell Scripting": 5
+    }
+  },
+  "Cloud Engineer": {
+    "skills":{
+        "AWS": 20,
+        "Azure": 20,
+        "Google Cloud": 20,
+        "Terraform": 15,
+        "Cloud Security": 10,
+        "Linux": 10,
+        "CI/CD": 5
+    }
+  },
+  "Cybersecurity Analyst": {
+    "skills": {
+        "Network Security": 30,
+        "Linux": 20,
+        "Python": 15,
+        "Ethical Hacking": 20,
+        "SIEM Tools": 10,
+        "Firewalls": 5
+    }
+  },
+  "UI/UX Designer": {
+    "skills": {
+        "Figma": 30,
+        "Adobe XD": 25,
+        "HTML": 15,
+        "CSS": 15,
+        "User Research": 10,
+        "Prototyping": 5
+    }
+  },
+  "QA Engineer": {
+    "skills": {
+        "Selenium": 30,
+        "JUnit": 20,
+        "Postman": 15,
+        "TestNG": 15,
+        "Automation Frameworks": 10,
+        "Bug Tracking Tools": 10
+    }
+  },
+  "Mobile App Developer": {
+    "skills": {
+        "Flutter": 30,
+        "Dart": 25,
+        "Android": 15,
+        "iOS": 15,
+        "Firebase": 10,
+        "UI/UX Principles": 5
+    }
+  },
+  "Blockchain Developer": {
+    "skills": {
+        "Solidity": 30,
+        "Ethereum": 25,
+        "Web3.js": 20,
+        "Smart Contracts": 15,
+        "Truffle/Ganache": 5,
+        "Cryptography": 5
+    }
+  } 
+}

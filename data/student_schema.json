@@ -1,0 +1,72 @@
+{
+  "student_id": "6b5adb2b-1f83-4f4c-ae9e-02de6fe9c3f7",
+  "first_name": "Bo",
+  "last_name": "Johnso",
+  "email": "bob3@example.com",
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+  ],
+  "projects": [
+    {
+      "title": "Cloud Project",
+      "description": "A project focused on utilizing HTML, CSS.",
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React"
+      ],
+      "project_url": "http://ian-miller.com/"
+    },
+    {
+      "title": "Next Project",
+      "description": "A project focused on utilizing HTML, CSS.",
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React"
+      ],
+      "project_url": "http://alice-thomas.com/"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Johnson Technologies",
+      "role": "Intern",
+      "start_date": "2023-06-01",
+      "end_date": "2024-06-01",
+      "description": "Worked on frontend developer tasks."
+    }
+  ],
+  "certifications_and_licenses": [
+    {
+      "title": "Frontend Developer Certificate",
+      "issuing_organization": "Coursera",
+      "credential_id": "CERT60369",
+      "credential_url": "https://coursera.org/certification/CERT95702",
+      "issue_date": "2023-05-01",
+      "expiration_date": null
+    }
+  ],
+  "job_preferences": {
+    "desired_roles": [
+      "Frontend Developer"
+    ],
+    "preferred_locations": [
+      "Hyderabad",
+      "Bangalore",
+      "Mumbai"
+    ],
+    "employment_type": [
+      "Full-Time",
+      "Internship"
+    ],
+    "work_mode": "Hybrid"
+  },
+  "gender": "Male",
+  "location": "Hyderabad"
+}
