@@ -26,39 +26,12 @@ try {
 }
 
 
-// Connect to MongoDB Atlas
-mongoose.connect('mongodb+srv://sunreddy1920:AlIHf7G0WkXxNZE6@cluster0.ls5bo.mongodb.net/student', {
+// Connect to MongoDB
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-.then(async () => {
-  console.log("MongoDB connected");
-
-  // --- START: Code to ensure 'student' database and 'students' collection exist ---
-  // This block will create the database and collection if they don't exist
-  // by attempting a find operation. If no documents are found, it inserts a dummy one.
-  try {
-    const studentsCollection = mongoose.connection.db.collection('students');
-    const existingStudent = await studentsCollection.findOne({});
-
-    if (!existingStudent) {
-      // If no students exist, insert a dummy student to ensure collection creation
-      await studentsCollection.insertOne({
-        first_name: "Dummy",
-        last_name: "User",
-        email: "dummy@example.com",
-        skills: ["MongoDB", "Node.js"],
-        job_preferences: { desired_roles: ["Developer"] },
-        projects: []
-      });
-      console.log("Dummy document inserted to ensure 'students' collection exists.");
-    }
-  } catch (dbInitError) {
-    console.error("Error during database/collection initialization:", dbInitError.message);
-  }
-  // --- END: Code to ensure 'student' database and 'students' collection exist ---
-
-})
+.then(() => console.log("MongoDB connected"))
 .catch(err => console.log("DB error: ", err));
 
 /**
